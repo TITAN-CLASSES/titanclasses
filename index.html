@@ -1,177 +1,139 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Titan Classes – Personal Tuitions</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Inter', Arial, sans-serif;
-      background: #f5f5f7;
-      color: #111;
-    }
-
-    /* HERO SECTION */
-    .hero {
-      background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1400&q=80');
-      background-size: cover;
-      background-position: center;
-      color: #fff;
-      padding: 120px 20px;
-      text-align: center;
-    }
-    .hero h1 {
-      font-size: 56px;
-      margin: 0;
-      font-weight: 700;
-    }
-    .hero p {
-      margin-top: 20px;
-      font-size: 20px;
-      opacity: 0.9;
-    }
-
-    /* SECTIONS */
-    .section {
-      padding: 60px 20px;
-      max-width: 1100px;
-      margin: auto;
-      text-align: center;
-    }
-
-    /* METRICS */
-    .metrics {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      margin-top: 40px;
-      gap: 20px;
-    }
-    .metric-box {
-      background: #fff;
-      border-radius: 16px;
-      padding: 30px;
-      width: 280px;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-    }
-    .metric-box h2 {
-      margin: 0;
-      font-size: 40px;
-      font-weight: 700;
-      color: #000;
-    }
-    .metric-box p {
-      margin-top: 12px;
-      font-size: 16px;
-      opacity: 0.7;
-    }
-
-    /* VALUE BLOCKS */
-    .value-grid {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 24px;
-      margin-top: 50px;
-    }
-    .value-box {
-      background: #fff;
-      border-radius: 14px;
-      padding: 28px;
-      width: 300px;
-      text-align: left;
-      box-shadow: 0 4px 14px rgba(0,0,0,0.06);
-    }
-    .value-box h3 {
-      margin: 0;
-      font-size: 20px;
-      font-weight: 600;
-    }
-    .value-box p {
-      opacity: 0.7;
-      margin-top: 10px;
-      font-size: 15px;
-    }
-
-    /* FOOTER */
-    footer {
-      background: #111;
-      color: #fff;
-      text-align: center;
-      padding: 40px 20px;
-      margin-top: 60px;
-      font-size: 14px;
-    }
-  </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Titan Classes — Trusted Home Tuitions</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Titan Classes — trust-first home tutoring operations. Curated tutors, structured learning, predictable outcomes." />
 </head>
-
 <body>
-  <div class="hero">
-    <h1>Titan Classes</h1>
-    <p>Premium Home Tuitions • Curated Tutors • Reliable, Year-Round Learning</p>
-  </div>
-
-  <div class="section">
-    <h2 style="font-size: 32px; font-weight: 700;">A Modern Home Tutoring Platform Designed for Trust & Performance</h2>
-    <p style="margin-top: 14px; max-width: 700px; margin:auto; opacity:0.75; font-size: 17px;">
-      Titan Classes delivered structured, high-quality home tutoring across Delhi NCR with a curated tutor network and seamless parent–teacher alignment.
-    </p>
-
-    <div class="metrics">
-      <div class="metric-box">
-        <h2>350–600</h2>
-        <p>Active Tutor Network</p>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <h1>Titan Classes</h1>
+        <p class="tag">Delhi’s Most Trusted Home Tuition System</p>
       </div>
-      <div class="metric-box">
-        <h2>12+ Months</h2>
-        <p>Avg Student Retention</p>
+      <nav class="nav">
+        <a href="#services">Services</a>
+        <a href="#problem">Problem</a>
+        <a href="#why">Why Titan</a>
+        <a href="#contact" class="cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <h2>The Only Home-Tuition System Built for Trust, Discipline & Results</h2>
+          <p class="lead">We bring structure to one of India’s most chaotic tuition markets — reliable tutors, consistent quality, and smooth operations — every single time.</p>
+          <div class="hero-ctas">
+            <a href="https://forms.gle/REPLACE_WITH_YOUR_FORM" class="btn primary">Talk to a counsellor — Join Early</a>
+            <a href="https://chat.whatsapp.com/REPLACE_WITH_YOUR_WHATSAPP" class="btn outline">Join WhatsApp Community</a>
+          </div>
+        </div>
+        <div class="hero-right">
+          <!-- simple animated card / placeholder -->
+          <div class="promo-card">
+            <div class="pulse"></div>
+            <h3>Structured tutoring</h3>
+            <p>Curated tutors • Transparent payments • Measurable progress</p>
+            <ul class="stats">
+              <li><strong>1,500+</strong> applications processed</li>
+              <li><strong>60</strong> top performers</li>
+              <li><strong>80%</strong> demo → conversion</li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <div class="metric-box">
-        <h2>5–10</h2>
-        <p>Ops & Support Team</p>
+    </section>
+
+    <section id="services" class="section services">
+      <div class="container">
+        <h3>Core Services</h3>
+        <div class="cards">
+          <div class="card">
+            <h4>End-to-End Tuition Management</h4>
+            <p>From inquiry to continuity — we manage onboarding, demos, payments and replacement.</p>
+          </div>
+          <div class="card">
+            <h4>Curated Tutor Pool</h4>
+            <p>High-precision screening, demo evaluation and continuous performance monitoring.</p>
+          </div>
+          <div class="card">
+            <h4>Trust & Transparency</h4>
+            <p>Clear payment flows, feedback cycles and accountable service delivery.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="problem" class="section problem">
+      <div class="container">
+        <h3>The Problem We Solve</h3>
+        <div class="problem-grid">
+          <div class="problem-text">
+            <ul>
+              <li>Group tuitions mix grades — learning collapses.</li>
+              <li>Reliable tutors are expensive; affordable ones are inconsistent.</li>
+              <li>College tutors often lack professionalism or accountability.</li>
+              <li>No standardised system for fees, demos, feedback or progression.</li>
+            </ul>
+          </div>
+          <div class="problem-visual">
+            <div class="box">
+              <p><strong>Result:</strong> Trust deficit, chaotic operations, unpredictable outcomes.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="why" class="section why">
+      <div class="container">
+        <h3>Why Titan Classes Works</h3>
+        <div class="threecols">
+          <div class="col">
+            <h4>Operational Precision</h4>
+            <p>Daily oversight, structured flows and quality control systems.</p>
+          </div>
+          <div class="col">
+            <h4>Trust-First Execution</h4>
+            <p>Refunds, transparency and strict teacher filters maintain integrity.</p>
+          </div>
+          <div class="col">
+            <h4>Scalable Discipline</h4>
+            <p>Curated supply engine with continuous monitoring and performance tracking.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h3>Get Priority Access</h3>
+        <p>Fill this short form or join our WhatsApp community to get first priority when we start onboarding.</p>
+        <div class="hero-ctas">
+          <a href="https://forms.gle/REPLACE_WITH_YOUR_FORM" class="btn primary">Early Access Form</a>
+          <a href="https://chat.whatsapp.com/REPLACE_WITH_YOUR_WHATSAPP" class="btn outline">Join WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="foot-left">
+        <strong>Titan Classes</strong> — Built for trust and consistent learning outcomes.
+      </div>
+      <div class="foot-right">
+        <a href="mailto:hello@titanclasses.com">hello@titanclasses.com</a>
       </div>
     </div>
-  </div>
-
-  <div class="section" style="margin-top: -20px;">
-    <h2 style="font-size: 30px; font-weight: 700;">What Made Us Different</h2>
-
-    <div class="value-grid">
-      <div class="value-box">
-        <h3>Curated Tutor Matching</h3>
-        <p>Hyper-fast matching system ensuring parents received tutors aligned with their child’s academic needs.</p>
-      </div>
-
-      <div class="value-box">
-        <h3>Subscription-Driven Model</h3>
-        <p>Built for reliability — students stayed longer, tutors felt secure, and revenue stayed consistent.</p>
-      </div>
-
-      <div class="value-box">
-        <h3>Standardized Quality</h3>
-        <p>Structured monitoring, feedback loops, and expectation alignment ensured teaching excellence.</p>
-      </div>
-
-      <div class="value-box">
-        <h3>Parent–Teacher Alignment</h3>
-        <p>Strong communication systems solved daily friction points and built long-term trust.</p>
-      </div>
-
-      <div class="value-box">
-        <h3>Operational Excellence</h3>
-        <p>Scheduling, onboarding, and issue resolution were streamlined for a smooth experience.</p>
-      </div>
-
-      <div class="value-box">
-        <h3>Hyperlocal Pricing Strategy</h3>
-        <p>Dynamic pricing by area ensured affordability while maximizing conversion efficiency.</p>
-      </div>
-    </div>
-  </div>
-
-  <footer>
-    © Titan Classes — Home Tuition Network | Delhi NCR
   </footer>
+
 </body>
 </html>
