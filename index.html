@@ -5,24 +5,24 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Delhi's Best Personal Tuition — Titan Classes</title>
 
-  <!-- Bootstrap 5 CSS -->
+  <!-- Bootstrap 5 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <link rel="stylesheet" href="styles.css?v=1" />
+  <link rel="stylesheet" href="styles.css?v=2" />
 </head>
-<body class="bg-dark text-white">
+<body class="bg-charcoal text-white">
 
   <!-- HEADER -->
-  <header class="py-3 border-bottom border-2 border-secondary">
+  <header class="py-3 border-bottom border-secondary">
     <div class="container d-flex align-items-center justify-content-between">
       <div>
         <h1 class="h4 mb-0">Titan Classes</h1>
-        <small class="text-muted d-block">Smart · Structured · Desciplined Learning</small>
+        <small class="text-muted d-block">Smart · Structured · Trust-First Learning</small>
       </div>
       <nav class="d-none d-md-flex gap-3 align-items-center">
-        <a class="text-muted text-decoration-none" href="#parent">Parents</a>
-        <a class="text-muted text-decoration-none" href="#teacher">Teachers</a>
-        <a class="text-muted text-decoration-none" href="#student">Students</a>
+        <a class="link-secondary text-decoration-none" href="#parent">Parents</a>
+        <a class="link-secondary text-decoration-none" href="#teacher">Teachers</a>
+        <a class="link-secondary text-decoration-none" href="#student">Students</a>
       </nav>
     </div>
   </header>
@@ -30,44 +30,45 @@
   <!-- TOGGLE (centered pill) -->
   <section class="py-4">
     <div class="container text-center">
-      <div class="btn-group btn-group-toggle role-pill" role="group" aria-label="Roles">
+      <div class="btn-group btn-group-lg role-pill" role="group" aria-label="Roles">
         <input type="radio" class="btn-check" name="role" id="role-parent" autocomplete="off" checked>
-        <label class="btn btn-outline-light rounded-pill px-4" for="role-parent" data-role="parent">Parent</label>
+        <label class="btn btn-pill" for="role-parent" data-role="parent">Parent</label>
 
         <input type="radio" class="btn-check" name="role" id="role-teacher" autocomplete="off">
-        <label class="btn btn-outline-light rounded-pill px-4" for="role-teacher" data-role="teacher">Teacher</label>
+        <label class="btn btn-pill" for="role-teacher" data-role="teacher">Teacher</label>
 
         <input type="radio" class="btn-check" name="role" id="role-student" autocomplete="off">
-        <label class="btn btn-outline-light rounded-pill px-4" for="role-student" data-role="student">Student</label>
+        <label class="btn btn-pill" for="role-student" data-role="student">Student</label>
       </div>
     </div>
   </section>
 
   <main>
-    <!-- PARENT SECTION -->
+
+    <!-- PARENT -->
     <section id="parent" class="role-section container py-4">
       <div class="row align-items-center gx-5">
         <div class="col-lg-7">
-          <h2 class="fw-bold">Home &amp; Online Tuition</h2>
-          <p class="mb-2 text-muted small">Built for <strong>1-on-1 Attention, Practice &amp; Results</strong></p>
+          <h2 class="fw-bold">Home &amp; Online tuition</h2>
+          <p class="small text-muted mb-2">Built for <strong class="text-highlight">1-on-1 Attention, Practice &amp; Results</strong></p>
 
-          <p class="lead text-white">Your child sits in a class of <strong>40+</strong> at school and then joins mixed group tuitions — attention is lost. As a responsible parent, you must act now.</p>
+          <p class="lead mb-3">Your child sits in a class of <strong>40+</strong> at school and then joins mixed group tuitions where attention is lost. As a responsible parent, you must act now.</p>
 
-          <ul class="list-unstyled mt-3 mb-3 text-muted">
+          <ul class="mb-3 list-unstyled text-muted">
             <li>• Screened from <strong>6000+</strong> applicants</li>
             <li>• Top performer teachers: <strong>600+</strong></li>
-            <li>• Demo class WhatsApp: <strong><a class="link-light" href="https://wa.me/918595592991?text=Hi%20Titan%20Classes%2C%20I%20want%20a%20demo">8595592991</a></strong></li>
+            <li>• Demo class WhatsApp: <strong><a class="link-highlight" href="https://wa.me/918595592991?text=Hi%20Titan%20Classes%2C%20I%20want%20a%20demo">8595592991</a></strong></li>
           </ul>
 
-          <p class="text-muted mb-3 small">We personally interview every teacher to maintain quality. We place excellent tutors at affordable, transparent rates — no surprises.</p>
+          <p class="text-muted">We personally interview every teacher and send only reliable, trained tutors — at transparent, affordable rates.</p>
 
-          <!-- Note: No early access button for parents -->
+          <!-- no early access for parents -->
         </div>
 
-        <div class="col-lg-5">
-          <div class="card bg-transparent border-0">
-            <div class="illustration mother-illus mx-auto"></div>
-            <figcaption class="text-muted text-center mt-2 small">Working mother — confident and empowered</figcaption>
+        <div class="col-lg-5 text-center">
+          <div class="card bg-panel p-3 border-0 mx-auto" style="max-width:320px">
+            <div class="illustration mother-illus mx-auto" aria-hidden="true"></div>
+            <figcaption class="text-muted small mt-2">Working mother — confident and empowered</figcaption>
           </div>
         </div>
       </div>
@@ -75,28 +76,28 @@
 
     <hr class="border-secondary my-4">
 
-    <!-- TEACHER SECTION -->
+    <!-- TEACHER -->
     <section id="teacher" class="role-section container py-4 d-none">
-      <div class="row gx-5 align-items-start">
+      <div class="row gx-5">
 
         <div class="col-12 mb-3">
           <h2 class="fw-bold">Earn while you study — teach 2–3 hours daily</h2>
-          <p class="text-muted small">NO MORE DEPENDING ON YOUR PARENTS FOR BASIC EXPENSES.</p>
+          <p class="text-muted small mb-0">NO MORE DEPENDING ON YOUR PARENTS FOR BASIC EXPENSES.</p>
         </div>
 
-        <!-- Home Tuition Card -->
+        <!-- Home Tuition block -->
         <div class="col-lg-6 mb-4">
-          <div class="card tutor-card h-100">
+          <div class="card tutor-card h-100 p-0 overflow-hidden">
             <div class="row g-0 h-100 align-items-center">
               <div class="col-7 p-4">
                 <h5 class="mb-2">Home Tuition — Local Classes</h5>
-                <p class="text-muted small mb-3">Teach students in-person; earn reliably. Be punctual and professional.</p>
+                <p class="text-muted small mb-3">Teach in-person. Flexible hours. Reliable earnings.</p>
                 <ul class="text-muted small mb-3">
                   <li>• Fluent in English</li>
                   <li>• Must have own vehicle</li>
                   <li>• Must be punctual</li>
                 </ul>
-                <p class="small text-muted mb-0">Dress: casual/jeans &amp; shirt. Carry ID and resume.</p>
+                <p class="small text-muted mb-0">Dress: casual (jeans &amp; shirt). Carry resume &amp; ID.</p>
               </div>
               <div class="col-5 p-3 text-center">
                 <div class="illustration boy-illus mx-auto"></div>
@@ -106,9 +107,9 @@
           </div>
         </div>
 
-        <!-- Online Tuition Card -->
+        <!-- Online Tuition block -->
         <div class="col-lg-6 mb-4">
-          <div class="card tutor-card h-100">
+          <div class="card tutor-card h-100 p-0 overflow-hidden">
             <div class="row g-0 h-100 align-items-center">
               <div class="col-5 p-3 text-center order-1 order-lg-0">
                 <div class="illustration girl-illus mx-auto"></div>
@@ -117,24 +118,24 @@
 
               <div class="col-7 p-4">
                 <h5 class="mb-2">Online Tuition — Work From Home</h5>
-                <p class="text-muted small mb-3">Deliver classes online through video; flexible hours and stable income.</p>
+                <p class="text-muted small mb-3">Deliver classes online; flexible schedule.</p>
                 <ul class="text-muted small mb-3">
                   <li>• Must have own laptop</li>
                   <li>• Must have touchpad or whiteboard</li>
                   <li>• Must be fluent in English</li>
                 </ul>
-                <p class="small text-muted mb-0">Safety &amp; professionalism prioritized. Share resume when applying.</p>
+                <p class="small text-muted mb-0">Share resume when applying. Safety and professionalism prioritized.</p>
               </div>
 
             </div>
           </div>
         </div>
 
-        <!-- CTA Row for Teachers -->
+        <!-- CTA -->
         <div class="col-12 mt-2">
-          <div class="d-flex gap-3 flex-column flex-sm-row align-items-start">
-            <a class="btn btn-lg btn-success" href="https://whatsapp.com/channel/0029Vas8ONVEFeXks4ziLE1g" target="_blank" rel="noopener">Open WhatsApp Channel (Leads)</a>
-            <a class="btn btn-lg btn-outline-light" href="https://forms.gle/fraJJeYtNMeTapsR6" target="_blank" rel="noopener">Apply / Submit Resume</a>
+          <div class="d-flex gap-3 flex-column flex-sm-row">
+            <a class="btn btn-cta" href="https://whatsapp.com/channel/0029Vas8ONVEFeXks4ziLE1g" target="_blank" rel="noopener">Open WhatsApp Channel (Leads)</a>
+            <a class="btn btn-outline-light" href="https://forms.gle/fraJJeYtNMeTapsR6" target="_blank" rel="noopener">Apply / Submit Resume</a>
           </div>
         </div>
 
@@ -143,66 +144,65 @@
 
     <hr class="border-secondary my-4">
 
-    <!-- STUDENT SECTION -->
+    <!-- STUDENT -->
     <section id="student" class="role-section container py-4 d-none">
       <div class="row align-items-center gx-5">
         <div class="col-lg-7">
           <h2 class="fw-bold">Struggling to understand concepts or clear doubts?</h2>
-          <p class="lead text-white">You ask questions in class but never get attention. Group tuitions mix students from different grades — confusing and ineffective. We are here to help.</p>
-          <p class="text-muted small">One-on-one attention, guided practice and doubt-clearing until you understand.</p>
+          <p class="lead mb-3">You ask questions in class but don’t get attention. Group tuitions mix grades and confusion grows. We provide focused 1-on-1 help.</p>
+          <p class="text-muted small">Personal attention, guided practice, and clear doubt-solving till you understand.</p>
         </div>
 
         <div class="col-lg-5 text-center">
-          <div class="card bg-transparent border-0">
-            <div class="illustration superman-illus mx-auto"></div>
-            <figcaption class="text-muted small mt-2">Focused help — become the top performer</figcaption>
+          <div class="card bg-panel p-3 border-0 mx-auto" style="max-width:320px">
+            <div class="illustration superman-illus mx-auto" aria-hidden="true"></div>
+            <figcaption class="text-muted small mt-2">Focused help — become the local top performer</figcaption>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- STATS & FOOTER CTA -->
+    <!-- STATS & CTA -->
     <section class="container py-5">
-      <div class="row text-center text-md-start gx-4 gy-3 align-items-center">
+      <div class="row text-center gx-4 gy-3 align-items-center">
         <div class="col-md-4">
-          <div class="stat-card p-3 rounded">
+          <div class="stat-card p-3 rounded text-white">
             <div class="h4 mb-0">6000+</div>
             <small class="text-muted">applications screened</small>
           </div>
         </div>
         <div class="col-md-4">
-          <div class="stat-card p-3 rounded">
+          <div class="stat-card p-3 rounded text-white">
             <div class="h4 mb-0">600+</div>
             <small class="text-muted">top performer teachers active</small>
           </div>
         </div>
         <div class="col-md-4">
-          <div class="stat-card p-3 rounded">
-            <div class="h4 mb-0">Demo via WhatsApp</div>
+          <div class="stat-card p-3 rounded text-white">
+            <div class="h6 mb-0">Demo via WhatsApp</div>
             <small class="text-muted">8595592991</small>
           </div>
         </div>
       </div>
 
       <div class="text-center mt-4">
-        <!-- No parent early access. Teachers use the apply button above. -->
         <a href="#contact" class="btn btn-outline-light">Contact</a>
       </div>
     </section>
 
-    <!-- CONTACT / TEACHER RESOURCES -->
+    <!-- CONTACT -->
     <section id="contact" class="container py-4">
       <div class="row gx-4">
         <div class="col-md-6">
           <h5 class="mb-2">Teacher Resources</h5>
-          <p class="small text-muted mb-1">WhatsApp Channel (leads): <a class="link-light" href="https://whatsapp.com/channel/0029Vas8ONVEFeXks4ziLE1g" target="_blank">Open Channel</a></p>
-          <p class="small text-muted mb-1">Apply: <a class="link-light" href="https://forms.gle/fraJJeYtNMeTapsR6" target="_blank">Application Form</a></p>
+          <p class="small text-muted mb-1">WhatsApp Channel (leads): <a class="link-highlight" href="https://whatsapp.com/channel/0029Vas8ONVEFeXks4ziLE1g" target="_blank">Open Channel</a></p>
+          <p class="small text-muted mb-1">Apply: <a class="link-highlight" href="https://forms.gle/fraJJeYtNMeTapsR6" target="_blank">Application Form</a></p>
           <p class="small text-muted mb-0">Keep the channel unmuted. Share your resume on apply.</p>
         </div>
 
         <div class="col-md-6">
           <h5 class="mb-2">Contact</h5>
-          <p class="small text-muted mb-1">Email: <a class="link-light" href="mailto:hello@titanclasses.com">hello@titanclasses.com</a></p>
+          <p class="small text-muted mb-1">Email: <a class="link-highlight" href="mailto:hello@titanclasses.com">hello@titanclasses.com</a></p>
         </div>
       </div>
     </section>
@@ -211,27 +211,26 @@
 
   <footer class="py-3 border-top border-secondary">
     <div class="container text-center text-muted small">
-      © Titan Classes — Delhi’s Best Personal Tuition
+      © Titan Classes — Delhi's Best Personal Tuition
     </div>
   </footer>
 
-  <!-- Bootstrap JS + small toggle script -->
+  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    // role toggle logic (wire to radio labels)
-    const parentSection = document.getElementById('parent');
-    const teacherSection = document.getElementById('teacher');
-    const studentSection = document.getElementById('student');
 
+  <script>
+    // Role toggle
     const parentRadio = document.getElementById('role-parent');
     const teacherRadio = document.getElementById('role-teacher');
     const studentRadio = document.getElementById('role-student');
+    const parentSection = document.getElementById('parent');
+    const teacherSection = document.getElementById('teacher');
+    const studentSection = document.getElementById('student');
 
     function updateView(){
       parentSection.classList.toggle('d-none', !parentRadio.checked);
       teacherSection.classList.toggle('d-none', !teacherRadio.checked);
       studentSection.classList.toggle('d-none', !studentRadio.checked);
-      // smooth scroll to top of main
       window.scrollTo({top: document.querySelector('main').offsetTop - 10, behavior:'smooth'});
     }
 
