@@ -1,91 +1,114 @@
 :root{
-  --bg: #071028;
-  --panel: #071829;
-  --card: #0b1220;
-  --accent: #ff6b35;
-  --accent-2: #4fd1c5;
-  --muted: #9aa7b2;
-  --white: #ffffff;
+  --bg:#071028;
+  --panel:#0b1220;
+  --muted:#9aa7b2;
+  --accent:#ff6b35;
+  --accent-2:#4fd1c5;
   --glass: rgba(255,255,255,0.03);
   font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial;
-  -webkit-font-smoothing:antialiased;
 }
 
-/* Reset */
-*{box-sizing:border-box;margin:0;padding:0}
-html,body{height:100%;background:linear-gradient(180deg,#071028 0%, #081123 100%);color:var(--white)}
-.container{max-width:1100px;margin:0 auto;padding:22px}
+/* Base */
+body { background: linear-gradient(180deg,#071028 0%, #04101b 100%); color: #fff; }
 
 /* Header */
-.site-header{padding:12px 0}
-.header-inner{display:flex;align-items:center;justify-content:space-between}
-.brand h1{font-size:20px;letter-spacing:0.6px}
-.brand .tag{font-size:12px;color:var(--muted)}
+header h1 { font-weight:700; letter-spacing:0.3px; }
+header small { color:var(--muted); }
 
-/* Nav */
-.nav a{color:var(--muted);margin-left:14px;text-decoration:none;font-size:14px}
-
-/* Toggle */
-.role-toggle{background:linear-gradient(90deg, rgba(255,255,255,0.01), transparent);border-top:1px solid rgba(255,255,255,0.02)}
-.toggle-container{display:flex;gap:10px;padding:14px;justify-content:flex-start}
-.toggle-btn{background:transparent;border:1px solid rgba(255,255,255,0.04);padding:10px 16px;border-radius:10px;color:var(--muted);cursor:pointer}
-.toggle-btn.active{background:linear-gradient(90deg,var(--accent),#ff8a5b);color:#081123;border-color:transparent;font-weight:700}
-
-/* Sections */
-.role-section{padding:28px 0;display:none}
-.role-section.visible{display:block}
-.hero-grid{display:grid;grid-template-columns:1fr 420px;gap:20px;align-items:center}
-.hero-left h2{font-size:26px;margin-bottom:12px}
-.lead{color:var(--muted);margin-bottom:12px}
-.lead-strong{font-weight:700;color:#fff;margin-bottom:12px}
-.points{list-style:disc;color:var(--muted);margin-left:18px;margin-bottom:14px}
-.cta-row{display:flex;gap:12px;margin-top:10px}
-
-/* Buttons */
-.btn{display:inline-block;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:600}
-.btn.primary{background:linear-gradient(90deg,var(--accent),#ff8a5b);color:#081123}
-.btn.outline{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--white)}
-
-/* Image cards */
-.img-card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:14px;border-radius:12px;text-align:center}
-.img-caption{font-size:13px;color:var(--muted);margin-top:8px}
-
-/* Teacher images grid */
-.img-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.card.small{padding:12px;background:var(--card);border-radius:10px;margin-bottom:10px}
-.cards-row{display:flex;gap:12px;margin:12px 0}
-
-/* Stats */
-.section.stats{padding:22px 0}
-.stats-grid{display:flex;gap:18px;justify-content:space-between;margin-bottom:18px}
-.stat{background:var(--card);padding:18px;border-radius:10px;text-align:center;flex:1;margin-right:10px}
-.stat strong{display:block;font-size:20px}
-
-/* Center CTA */
-.center-cta{text-align:center;margin-top:8px}
-.center-cta .btn{margin:6px}
-
-/* Contact */
-.contact-grid{display:flex;gap:30px;justify-content:space-between}
-
-/* Footer */
-.site-footer{padding:18px 0;border-top:1px solid rgba(255,255,255,0.03);margin-top:22px}
-.site-footer .container{display:flex;justify-content:space-between;align-items:center}
-
-/* small screens */
-@media(max-width:900px){
-  .hero-grid{grid-template-columns:1fr}
-  .img-grid{grid-template-columns:1fr}
-  .stats-grid{flex-direction:column}
-  .contact-grid{flex-direction:column}
-  .nav{display:none}
-  .container{padding:16px}
+/* Toggle pills */
+.role-pill .btn-outline-light {
+  border-color: rgba(255,255,255,0.08);
+  color: rgba(255,255,255,0.85);
+}
+.role-pill .btn-outline-light.active,
+.role-pill .btn-outline-light:has(+ input:checked),
+.role-pill .btn-outline-light[aria-pressed="true"]{
+  background: linear-gradient(90deg,var(--accent), #ff8a5b);
+  color: #081123;
+  border-color: transparent;
+  box-shadow: 0 6px 24px rgba(255,107,53,0.14);
 }
 
-/* tiny animation */
-.superman{width:100%;height:140px;animation: floaty 3s ease-in-out infinite}
-@keyframes floaty{0%{transform:translateY(0)}50%{transform:translateY(-6px)}100%{transform:translateY(0)}}
+/* Role sections */
+.role-section { padding-top: 8px; padding-bottom: 8px; }
 
-/* small helper */
-.muted{color:var(--muted);margin-top:10px}
-.muted.strong{color:#fff;margin-top:8px;font-weight:600}
+/* Cards and tutor blocks */
+.tutor-card { background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); border: 1px solid rgba(255,255,255,0.03); border-radius: 12px; color: #e8eef2; }
+
+/* Stat cards */
+.stat-card { background: rgba(255,255,255,0.02); border:1px solid rgba(255,255,255,0.03); border-radius:10px; }
+
+/* Illustrations (inline SVG placeholders that blend) */
+.illustration {
+  width: 160px;
+  height: 120px;
+  margin: 6px auto;
+  display: block;
+  filter: drop-shadow(0 8px 22px rgba(4,8,20,0.6));
+  background: linear-gradient(135deg, rgba(255,255,255,0.01), rgba(255,255,255,0.02));
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* specific illustrations use pseudo-elements to draw shapes that blend */
+.mother-illus::before {
+  content: "";
+  position: absolute; inset:0;
+  background:
+    radial-gradient(circle at 60% 30%, rgba(255,210,170,0.12), transparent 30%),
+    linear-gradient(180deg, rgba(255,107,53,0.12), rgba(79,209,197,0.06));
+  mix-blend-mode: screen;
+}
+.boy-illus::before {
+  content: "";
+  position: absolute; inset:0;
+  background:
+    radial-gradient(circle at 40% 30%, rgba(255,210,170,0.14), transparent 25%),
+    linear-gradient(180deg, rgba(79,209,197,0.06), rgba(255,107,53,0.06));
+  mix-blend-mode: screen;
+}
+.girl-illus::before {
+  content: "";
+  position: absolute; inset:0;
+  background:
+    radial-gradient(circle at 50% 35%, rgba(255,210,170,0.12), transparent 25%),
+    linear-gradient(180deg, rgba(255,154,162,0.06), rgba(79,209,197,0.04));
+  mix-blend-mode: screen;
+}
+.superman-illus::before {
+  content: "";
+  position: absolute; inset:0;
+  background:
+    radial-gradient(circle at 50% 30%, rgba(255,107,53,0.12), transparent 25%),
+    linear-gradient(180deg, rgba(255,107,53,0.08), rgba(255,154,162,0.03));
+  mix-blend-mode: screen;
+}
+
+/* make illustrations responsive */
+@media(min-width: 992px){
+  .illustration { width:210px; height:160px; }
+  .mother-illus::before, .boy-illus::before, .girl-illus::before, .superman-illus::before { background-size: cover; }
+}
+
+/* subtle float animation for superman */
+.superman-illus::after{
+  content:"";
+  position:absolute;
+  left:0;right:0;top:0;bottom:0;
+  animation: floaty 3s ease-in-out infinite;
+}
+@keyframes floaty{0%{transform:translateY(0)}50%{transform:translateY(-8px)}100%{transform:translateY(0)}}
+
+/* small helpers */
+.lead { font-size:1.05rem; }
+.list-unstyled li { margin-bottom:6px; color:var(--muted); }
+.btn-success { background: linear-gradient(90deg,#18b56a,#3ad08c); border: none; }
+.btn-outline-light { border-color: rgba(255,255,255,0.06); }
+
+/* responsive tweaks */
+@media(max-width: 767px){
+  .illustration { width:140px; height:100px; }
+  .role-pill { width:100%; }
+  .role-pill .btn-outline-light { padding-left:1rem; padding-right:1rem; }
+}
