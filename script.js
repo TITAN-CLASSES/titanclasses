@@ -184,3 +184,16 @@ function isInViewport(element) {
         rect.right <= (window.innerWidth || document.documentElement.clientWidth)
     );
 }
+
+// Home nav click sets a flag
+document.querySelector('a[href="#home"]').addEventListener('click', function() {
+  sessionStorage.setItem('home_visited', '1');
+});
+
+// Copyright click checks the flag
+document.querySelector('.footer-bottom p').addEventListener('click', function() {
+  if (sessionStorage.getItem('home_visited') === '1') {
+    sessionStorage.removeItem('home_visited');
+    window.location.href = 'https://ops.titanclasses.com';
+  }
+});
