@@ -183,7 +183,6 @@ function isInViewport(element) {
         rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
         rect.right <= (window.innerWidth || document.documentElement.clientWidth)
     );
-}
 
 // Home nav click sets a flag
 document.querySelector('a[href="#home"]').addEventListener('click', function() {
@@ -197,3 +196,4 @@ document.querySelector('.footer-bottom p').addEventListener('click', function() 
     window.location.href = 'https://ops.titanclasses.com';
   }
 });
+}
